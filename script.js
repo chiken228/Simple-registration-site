@@ -12,6 +12,9 @@ function displayText() {
     if (input === "") {
         errorElement.innerText = "Имя обязательно должно быть.";
         errorElement.style.display = 'block';
+        setTimeout(function(){
+            errorElement.style.display = 'none';
+        }, 3000);
     } else {
         if (input1.includes('@')){
             if (input2 == input3 && input2.length >= 8 && input3.length >= 8){
@@ -22,16 +25,25 @@ function displayText() {
                 else{
                     errorElement.innerText = "Возраст меньши 1 или бошьле 120 ";
                     errorElement.style.display = 'block';
+                    setTimeout(function(){
+                        errorElement.style.display = 'none';
+                    }, 3000);
                 }
             }
             else{
                 errorElement.innerText = "Не правельно ввиден пароль.";
                 errorElement.style.display = 'block';
+                setTimeout(function(){
+                    errorElement.style.display = 'none';
+                }, 3000);
             }
         }
         else{
             errorElement.innerText = "Почта не действительная.";
             errorElement.style.display = 'block';
+            setTimeout(function(){
+                errorElement.style.display = 'none';
+            }, 3000);
         }
     }
 }
