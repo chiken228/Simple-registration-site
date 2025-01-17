@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="52.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <label for="inputText">Имя</label>
+            <input type="text" id="inputText" placeholder="Обязательно.">
+            <label for="inputText">Email</label>
+            <input type="text" id="inputText1" placeholder="Обязательно.">
+            <label for="inputText">Пароль</label>
+            <input type="text" id="inputText2" placeholder="Минимум 8 символов.">
+            <label for="inputText">Подтвердить пароль</label>
+            <input type="text" id="inputText3" placeholder="Обязательно.">
+            <label for="inputText">Возраст</label>
+            <input type="text" id="inputText4" placeholder="Не обязательно.">
+            <br>
+            <button type="button" onclick="displayText()">Отправить</button>
+            <div id="error" class="error"></div> <div id="norm" class="norm"></div>
+            <p id="output"></p>
+        </div>
+    </form>
+    
+</body>
+</html>

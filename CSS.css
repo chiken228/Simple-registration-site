@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 300px;
+}
+label {
+    margin-top: 20px;
+    display: block;
+    color: #666;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #4a54e1;
+}
+#output {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.error {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffdddd;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    border-radius: 5px;
+    display: none; /* Скрыто по умолчанию */
+}
+.norm {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e5ffdd;
+    color: #07d800;
+    border: 1px solid #07d800;
+    border-radius: 5px;
+    display: none; /* Скрыто по умолчанию */
+}
